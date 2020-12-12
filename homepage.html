@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color:#33FFFC;">
+<h2>To predict demand, please fill in all boxes and select the "Predict" button.</h2>
+ <br>
+Year: <input type="text" name="Year" id="year" class="login-form-field" placeholder="Year">(Data starts in 2011) <br><br>
+Holiday: <input type="text" name="Holiday" id="holiday" class="login-form-field" placeholder="Holiday">(0= no holiday, 1= there is a holiday)<br><br>
+Weekend: <input type="text" name="Weekend" id="weekend" class="login-form-field" placeholder="Weekend">(0 = weekend, 1 = weekday)<br><br>
+Weather: <input type="text" name="Weather" id="weather" class="login-form-field" placeholder="Weather">(1= clear skies, 2 = cloudy/overcast, 3 = stormy)<br><br>
+Temperature: <input type="text" name="Temperature" id="temperature" class="login-form-field" placeholder="Temperature">(Normalized temperature in Celsius, choose between .06 and .86)<br><br>
+Humidity: <input type="text" name="Humidity" id="humidity" class="login-form-field" placeholder="Humidity">(Humidity value between 0 and 1)<br><br>
+Windspeed: <input type="text" name="Windspeed" id="windspeed" class="login-form-field" placeholder="Windspeed">(Normalized windspeed, between 0 and .5) <br><br>
+<a href="/visuals"> <button type="button" style="height:100px;width:200px">To Data Visualization</button> </a>
+<a target = "_blank" onclick="this.href='results?year=' + document.getElementById('year').value + '&holiday=' + document.getElementById('holiday').value + '&weekend=' + document.getElementById('weekend').value + '&weather=' + document.getElementById('weather').value + '&temperature=' + document.getElementById('temperature').value + '&humidity=' + document.getElementById('humidity').value + '&windspeed=' + document.getElementById('windspeed').value" href=""> <button type="button" style="height:100px;width:200px">Predict</button> </a>
+
+
+
+</body>
+</html>
